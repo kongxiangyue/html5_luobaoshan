@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>内置函数的使用</title>
+		<script type="text/javascript">
+			function fn() {
+				document.write(arguments.length + '<br />'); //输出参数的个数
+				document.write(arguments[0] + '<br />'); //输出第一个参数的值
+			}
+			fn(1, 2, 3, 4, 5, 6, 7, 8); //输出8   1
+			document.write(escape('你') + '<br />'); //输出你的编码为%u4F60
+			document.write(unescape('%u4F60') + '<br />'); //对%u4F60进行解码，输出你
+			var num = '3.4';
+			var n = parseFloat(num);
+			document.write(n + '<br />'); //输出3.4
+			document.write((typeof n) + '<br />'); //输出number
+			num = '3.444400.333';
+			var n = parseFloat(num);
+			document.write(n + '<br />'); //输出3.4444将第二个点之后的都忽略，还有吧无效的0忽略
+			var x = true;
+			var y = Number(x);
+			document.write(y + '<br />'); //输出1			
+			num = '    150px';
+			var re = parseInt(num);
+			document.write(re + '<br />'); //输出150，parseInt()可以忽略前面的空格
+			var m = 10;
+			var z = parseInt(m, 2);
+			document.write(z); //将2进制的10转化为十进制的2
+			var str = '1+1';
+			document.write(eval(str)); //用js的语法进行解析str，返回2
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

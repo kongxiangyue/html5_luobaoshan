@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单基本元素的应用</title>
+	</head>
+	<body>
+		<h1>个人信息</h1>
+		<form action="" method="get" name="">
+			<fieldset>
+				<legend>基本信息 </legend>
+				<label for="username">用户名 : </label>
+				<input type="text" name="username" id="username" value="name"><br>
+				<label for="password">密码  : </label>
+				<input type="password" name="password" id="password" 　maxlength="8"><br>
+				<label> 性别：</label>
+				<input type="radio" name="sex" value="female">女
+				<input type="radio" name="sex" value="female">男 <br>
+				<label for="photo">请上传你的照片    : </label>
+				<input type="file" name="photo" id="photo"><br>
+			</fieldset>
+			<fieldset>
+				<legend>个人资料 </legend>
+				<p>请选择你喜欢的音乐 (可多选 ):
+					<input type="checkbox" name="music" id="rock" value="rock" checked>
+					<label for="rock">摇滚乐 </label>
+					<input type="checkbox" name="music" id="jazz" value="jazz">
+					<label for="jazz">爵士乐</label>
+					<input type="checkbox" name="music" id="pop" value="pop">
+					<label for="pop">流行乐 </label>
+				</p>
+				<p>请选择你居住的城市 :
+					<input type="radio" name="city" id="beijing" value="beijing" checked>
+					<label for="beijing">北京 </label>
+					<input type="radio" name="city" id="shanghai" value="shanghai">
+					<label for="shanghai">上海 </label>
+					<input type="radio" name="city" id="nanjing" value="nanjing">
+					<label for="nanjing">南京 </label>
+				</p>
+                
+				<label for="habit">你的兴趣爱好  (可多选 ): </label>
+				<br>
+				<select name="habit" id="habit" size="4"  multiple  style="width: 100px;">
+					<option value="game" selected>游戏 </option>
+					<option value="movie">电影</option>
+					<option value="shop">购物 </option>
+					<option value="draw">画画 </option>
+					<option value="ball">足球 </option>
+				</select>
+
+				<p>
+					<label for="season">请选择你最喜欢的季节      : </label>
+					<select name="season" id="season">
+						<option value="spring" selected>春</option>
+						<option value="summer">夏</option>
+						<option value="autumn">秋</option>
+						<option value="winter">冬</option>
+					</select>
+				</p>
+			</fieldset>
+			<label for="comment">自我介绍</label> <br />
+			<textarea name="comment" id="comment" rows="5" cols="40"></textarea>
+			<br>
+			<input type="hidden" name="method" value="delete">
+			<input type="image" src="img/play.jpg">
+			<br>			
+			<p>
+				<input type="button" value="关闭窗口  " onClick="window.close()"/>
+				<input type="submit" name="submit" value="修改"/>
+				<input type="reset" name="reset" value="重置"/>
+			</p>			
+			</form>
+	</body>
+</html>

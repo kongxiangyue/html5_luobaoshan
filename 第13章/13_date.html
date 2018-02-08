@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>日期对象</title>
+		<script>
+			var now = new Date();	//表示今天
+			var contryday = new Date(2017, 10, 1, 0, 0, 0);//表示2017国庆节
+			var mybirth = new Date("June 10,2007");			
+			document.write("now所代表的时间为：" + now.toLocaleString() + "<br>");
+			document.write("contryday所代表的时间为：" + contryday.toLocaleString() + "<br>");
+			document.write("mybirth所代表的时间为：" + mybirth.toLocaleString() + "<br>");
+			document.write("现在是"+now.getHours() + "点");
+			var mse = contryday - now;//得到毫秒数
+			var day = parseInt(mse/(24*60*60*1000));
+			document.write("当前时间距离2017年国庆节还有"+ day + "天");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

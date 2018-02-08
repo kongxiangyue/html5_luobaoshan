@@ -1,0 +1,119 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+#wrapper {
+	width: 600px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+fieldset legend {
+	font-size: 20px;	
+	padding-left: 30px;
+}
+
+fieldset {
+	background-color: #f1f1f1;
+	border: none;
+	margin-bottom: 12px;
+	overflow: hidden;
+	padding: 0 10px;
+}
+
+ul {
+	background-color: #fff;
+	list-style: none;
+	margin: 12px;
+	padding: 10px;
+}
+
+li {
+	margin: 0.5em 0;
+}
+
+label {
+	display: inline-block;
+	padding: 3px 6px;
+	text-align: right;
+	width: 120px;
+	vertical-align: top;
+}
+
+.large {
+	background: #E2F7FC;
+	width: 200px;
+	border: 1px solid #CCC;
+}
+
+textarea {
+	font: inherit;
+	height: 100px;
+	width: 300px !important;
+}
+
+.radios {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.radios ul {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.radios li {
+	margin: 0;
+	display: inline-block;
+}
+
+.radios label {
+	margin-right: 10px;
+	width: auto;
+}
+
+.radios input {
+	width: 20px;
+	margin-top: 5px;
+}
+
+.checkboxes {
+	margin: 0;
+	padding: 0;
+}
+
+.checkboxes input {
+	margin: 7px 10px 0 30px;
+}
+
+.checkboxes label {
+	text-align: left;
+	width: auto;
+}
+
+.feedback {
+	background-color: #06F;
+	border: none;
+	color: #fff;
+	margin: 12px;
+	padding: 3px;
+	width: 100px;
+	height: 30px;
+}
+
+.feedalign {
+	text-align: right;
+}

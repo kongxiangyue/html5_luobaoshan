@@ -1,0 +1,96 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	font-size: 12px;
+	padding-top: 10px;
+}
+#wrapper {
+	width: 800px;
+	border: 1px solid #CCC;
+	margin:0 auto;
+}
+header {
+	background-image: url(img/navbg.png);
+}
+header ul {
+	list-style-type: none;
+	padding: 8px 0 8px 20px;
+}
+header li {
+	display: inline;
+	margin:0 12px;
+}
+header a:link, header a:visited {
+	text-decoration: none;
+	color: #F5F5F5;
+	font-weight: bold;
+}
+header a:hover {
+	color: #000;
+}
+#content {
+	float: left;
+	width: 524px;
+	padding:5px 10px 5px 15px;
+	border-right: 1px dotted #ccc;
+}
+#content h1 {
+	text-align: center;
+	font-size: 26px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-family: "黑体";
+}
+#content h2 {
+	font-size: 14.7px;
+	font-family: "微软雅黑";
+	text-indent: 2em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+#content p {
+	text-indent: 2em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#sidebar {
+	float: right;
+	width: 240px;
+	margin-left: 10px;
+	margin-top: 85px;
+}
+aside {
+	border-left-width: 1px solid #ccc;
+	border-bottom-style: 10px  solid #ccc;
+}
+#sidebar h2 {
+	background-color: #2267B5;
+	font-size: 12px;
+	color: #F5F5F5;
+	padding: 5px 0 5px 20px;
+}
+#sidebar ul {
+	margin-left: 30px;
+}
+#sidebar li {
+	margin: 8px 0;
+}
+#sidebar a:link, #sidebar a:visited {
+	color: #000;
+	text-decoration: none;
+}
+#sidebar a:hover {
+	text-decoration: underline;
+}
+footer {
+	padding: 8px 0 8px 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	clear: both;
+	background-image: url(img/navbg.png);
+	color: #FFF;
+        text-align:center;
+}

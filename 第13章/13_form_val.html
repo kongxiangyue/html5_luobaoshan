@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册</title>
+		<link rel="stylesheet" href="css/mycss.css" />
+		<script type="text/javascript" src="js/formval.js" ></script>
+		<style>
+			fieldset {
+				background-color: #FFFFFF;
+				border: 1px solid gray;
+				margin-bottom: 12px;
+				overflow: hidden;
+				padding: 0 0px;
+			}
+			
+			#wrapper {
+				width: 400px;
+			}
+			
+			.btn {
+				background-color: #06F;
+				color: #fff;
+				padding: 3px;
+				width: 70px;
+				height: 25px;
+			}
+			
+			.btn_align {
+				text-align: center;
+			}
+			.gender{
+				border: none;
+			}			
+		</style>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>用户注册  </h1>
+			<form method="post" action="" id="regist" name="regist">
+				<fieldset>
+					<ul>
+						<li>
+							<label for="username">用户名   : </label>
+							<input type=" text " id="username" name=" username " class=" large " />
+						</li>
+						<li>
+							<label for="password1">密码  : </label>
+							<input name="password" type="password" class="large" id="password1" />
+						</li>
+						<li>
+							<label for="password2">再次输入密码    : </label>
+							<input name="password2" type="password" class="large" id="password2" />
+						</li>
+						<li>
+							<label>性别  : </label>
+							<fieldset class="radios gender">
+								<ul>
+									<li>
+										<input type="radio" id="gender_male" name="gender" value="male" />
+										<label for="gender_male">男</label>
+									</li>
+									<li>
+										<input type="radio" id="gender_female" name="gender" value="female" />
+										<label for="gender_female">女</label>
+									</li>
+								</ul>
+							</fieldset>
+						</li>
+						<li>
+							<label for="email">电子邮件   : </label>
+							<input type="email" id="email" name="email" class="large" />
+						</li>
+						<li>
+							<label for="age">年龄  : </label>
+							<input name="age" type="text" class="large" id="age" />
+						</li>
+						<li>
+							<div class="btn_align">
+								<input type="submit" class="feedback" value="注册"  onclick="return check()"/>
+							</div>
+						</li>
+					</ul>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+<title>form对象属性使用</title>
+</head>
+<body>
+<div>
+  <H3>在文本框中输入内容，注意第二个文本框变化：</H3>
+  <form>
+	内容：<input type=text onChange="document.my.elements[0].value=this.value;" >
+  </form>
+    <form name="my">
+	结果：<input type=text onChange="document.forms[0].elements[0].value=this.value;">
+  </form>
+  <script>
+  	document.write("页面中有"+ document.forms.length + "个表单！！")
+  </script>
+</div>
+</body>

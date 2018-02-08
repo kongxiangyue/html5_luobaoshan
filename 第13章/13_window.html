@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>window对象</title>
+	</head>
+	<body>
+		<script>
+			function shutwin() { 
+				window.close();
+				return; 
+			}
+
+			function disp_prompt() {
+				var name = prompt("请输入名称", "")
+				if(name != null && name != "") {
+					document.getElementById("rs").innerHTML = "你好 " + name + "!";
+				}
+			}
+
+			function disp_confirm() {
+				var r = confirm("按下按钮")
+				if(r == true) {
+					document.getElementById("rs").innerHTML = "你刚才单击了确认对话框的确定按钮";
+				} else {
+					document.getElementById("rs").innerHTML = "你刚才单击了确认对话框的取消按钮";
+				}
+			}
+		</script>
+		
+		<a href="javascript:shutwin();">关闭本窗口</a>
+		<br> <br>
+		<input type="button" onclick="disp_prompt()" value="输入对话框" />
+		<input type="button" onclick="disp_confirm()" value="选择对话框" />
+		<br>
+		<div>
+			<p id="rs"></p>
+		</div>
+	</body>
+</html>

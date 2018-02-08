@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>break语句</title>
+		<script type="text/javascript">
+			var s= "I have a dream";
+			var iLength = s.length;
+			for(var i = 0; i < iLength; i++) {
+				if(s.charAt(i) == "d") //charAt是字符串对象的方法，取第i个位置上的字符
+				{
+					break;
+				}
+			}	//循环退出有两种可能： i== iLength, s.charAt(i)=="d"		
+			if(i==iLength){
+				document.write("字符串" + s + "中的没有d。");
+			}else{
+			    document.write("字符串" + s + "中的第一个d字母的位置为" + i);
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

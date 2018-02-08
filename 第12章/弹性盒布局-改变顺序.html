@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弹性盒布局-改变显示顺序</title>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#container{
+				width: 80%;
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+			#wrapper{
+				
+				display:-moz-box;
+                display:-webkit-box;
+             }
+			
+			.col{
+				
+				text-align: center;
+				box-sizing: border-box;
+				padding: 20px;
+				color: #fff;
+				
+			}
+			.col img{
+				width: 30%;
+				margin-top: 30px;
+			}
+			
+			#left{
+				width: 150px;
+				background: #53868b;
+				-moz-box-ordinal-group: 3;
+				-webkit-box-ordinal-group: 3;
+				
+			}
+			#right{
+				width: 150px;
+				background: #67aeef;
+				-moz-box-ordinal-group: 1;
+				-webkit-box-ordinal-group: 1;
+			}
+			#center{
+				-moz-box-flex: 1;
+				-webkit-box-flex: 1;
+				background: #3498db;
+				-moz-box-ordinal-group: 2;
+				-webkit-box-ordinal-group: 2;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="wrapper">
+			<div class="col" id="left">
+				<img src="img/location.png"  />
+				<h1>地理定位</h1>
+				<p>地理定位指的是搜索引擎根据用户所在位置及关键词本身的地理位置特性，返回不同的结果。地理定位是个人化搜索的表现形式之一。</p>
+			</div>
+			<div class="col" id="center">
+				<img src="img/support.png" />
+				<h1>技术支持</h1>
+				<p>技术支持分售前技术支持和售后技术支持，售前技术支持是指在销售遇到无法解答的产品问题时，售前技术支持给予帮助；售后技术支持是指产品公司为其产品用户提供的售后服务的一种形式，帮助用户诊断并解决其在使用产品过程中出现的有明显症状的，可能由产品导致的技术问题。
+                </p>
+			</div>
+			<div class="col" id="right">
+				<img src="img/active.png"  />
+				<h1>最新活动</h1>
+				<p>为消费者提供新鲜、全面的导购资讯； 为消费者提供各类优惠券与购物返利服务； 为消费者提供各大品牌新品、各个商家的免费体验机会； 为消费者提供各大品牌的购物积分奖励活动。</p>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>

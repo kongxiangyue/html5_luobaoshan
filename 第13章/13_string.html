@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>判断字符串是否合法</title>
+<script>
+  function isRight(subChar)
+  {  
+     var findChar="abcdefghijklmnopqrstuvwxyz1234567890_ -";
+     subChar=subChar.toLowerCase();
+	 for(var i=0;i<subChar.length;i++)
+	 {
+		 if(findChar.indexOf(subChar.charAt(i))==-1)
+		 {
+			 alert("你的字符串不合法");
+			 return; 
+		 }
+	 }
+	  alert("你的字符串合法");
+  }
+</script>
+</head>
+<body>  
+ <form action="" method="post" name="myform" id="myform">
+    <input type="text" name="txtString">
+    <input type="button" value="检   查" onClick="isRight(document.myform.txtString.value)">
+ </form>
+</body>
+</html>

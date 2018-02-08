@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>两列均分布局</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			section{
+				width:980px;
+				background: #F5F5F5;
+				box-shadow: 0 0 1px rgba(0,0,0,.4) inset;
+				box-sizing: border-box;
+				padding: 40px;
+			}
+			article{
+				width: 49%;
+				float:left;
+				position: relative;
+			}
+			section:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			article:first-child{
+				margin-right: 2%;
+			}
+			h1{
+				font-size: 32px;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size:15px;
+				color: #777;
+			}
+			h1,p{
+				width: 65%;
+				margin-left: 35%;
+				font-family: "微软雅黑";
+			}
+			img{
+				position: absolute;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<article>
+				<h1>
+					公共汽车
+				</h1>
+				<p>
+					公共汽车，城市客车，即巴士或大巴，是客车类中大、中型客车的典型车型，是为专门解决城市和城郊运输而设计及装备的商用车。这种车辆设有乘客座椅及供乘客站立与走动的通道，要求站立面积大，车厢内通道与出入口宽、两个以上车门，踏板低。
+				</p>
+				<img src="img/bus.png"  alt="Bus" />
+			</article>
+			<article>
+				<h1>
+					自行车
+				</h1>
+				<p>
+					自行车，又称脚踏车或单车，通常是二轮的小型陆上车辆。人骑上车后，以脚踩踏板为动力，是绿色环保的交通工具。英文bicycle。其中bi意指二，而cycle意指轮，即两轮车。可以作为环保的交通工具用来代步、出行；越来越多的人将自行车作为健身器材用来骑行锻炼、自行车出游。
+				</p>
+				<img src="img/bike.png"  alt="Bike"/>
+			</article>
+		</section>
+		
+	</body>
+</html>

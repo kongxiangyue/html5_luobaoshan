@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>数组的应用</title>
+		<script>
+			var myArr = new Array("A", "B", "C"); //创建数组myArr
+			var myArr2 = new Array("J", "K", "L"); //创建数组myArr2
+			var myArr3 = new Array(); //创建数组myArr3
+			myArr3 = myArr3.concat(myArr, myArr2); //数组myArr和myArr2合并，并赋给数组myArr3
+			/*输出合并后数组myArr3的元素值*/
+			document.write("合并后数组：");
+			for(i in myArr3) {
+				document.write(myArr3[i] + "　");
+			}
+			myArr3.pop(); //删除myArr3数组的最后一个元素
+			/*输出删除最后一个元素后的数组*/
+			document.write("<br />删除最后一个元素：");
+			for(i in myArr3) {
+				document.write(myArr3[i] + "　");
+			}
+			myArr3.shift(); //删除myArr3数组的第一个元素
+			/*输出删除第一个元素后的数组*/
+			document.write("<br />删除第一个元素：");
+			for(i in myArr3) {
+				document.write(myArr3[i] + "　");
+			}
+			myArr3.reverse();
+			document.write("<br />将数组颠倒顺序：");
+			for(i in myArr3) {
+				document.write(myArr3[i] + "　");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

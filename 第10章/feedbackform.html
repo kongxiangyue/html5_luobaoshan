@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户信息反馈表</title>
+		<link rel="stylesheet" href="css/mycss.css" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>用户信息反馈表  </h1>
+			<form method="post" action="" id="feedback" name="feedback">
+				<! —基本信息开始    -->
+				<fieldset>
+					<legend>基本信息 </legend>
+					<ul>
+						<li>
+							<label for="username">用户名   : </label>
+							<input type=" text " id=" username " name=" username " class=" large " required placeholder="请输入你的用户名   " />
+						</li>
+						<li>
+							<label>性别  : </label>
+							<fieldset class="radios">
+								<ul>
+									<li>
+										<input type="radio" id="gender_male" name="gender" value="male" />
+										<label for="gender_male">男</label>
+									</li>
+									<li>
+										<input type="radio" id="gender_female" name="gender" value="female" />
+										<label for="gender_female">女</label>
+									</li>
+								</ul>
+							</fieldset>
+						</li>
+						<li>
+							<label for="age">年龄  : </label>
+							<input name="age" type="text" class="large" id="age" />
+						</li>
+						<li>
+							<label for="vocation">职业  : </label>
+							<input name="vocation" type="text" class="large" id="vocation" />
+						</li>
+					</ul>
+				</fieldset>
+				<!   —基本信息结束     -->
+
+				<!   —联系方式开始     -->
+				<fieldset>
+					<legend>联系方式 </legend>
+					<ul>
+						
+						<li>
+							<label for="telephone">电话号码   : </label>
+							<input type="tel" id="telephone" name="telephone" class="large" />
+						</li><li>
+							<label for="email">电子邮件   : </label>
+							<input type="email" id="email" name="email" class="large" />
+						</li>
+						<li>
+							<label for="street_address">单位地址    : </label>
+							<input type="text" id="street_address" name="street_address" class="large" />
+						</li>
+						<li>
+							<label for="country">国家    : </label>
+							<select name="country" class="small" id="country">
+								<option value="China" selected>中国 </option>
+								<option value="American">美国 </option>
+								<option value="German">德国 </option>
+							</select>
+						</li>
+					</ul>
+				</fieldset>
+				<!   —联系方式结束    -->
+
+				<!   —客户体验开始    -->
+				<fieldset>
+					<legend>客户体验 </legend>
+					<ul>
+						<li>
+							<label>卫生状况： </label>
+							<fieldset class="radios">
+								<ul>
+									<li>
+										<input type="radio" id="clean1" name="gender" value=" very good" />
+										<label for="clean1">非常好</label>
+									</li>
+									<li>
+										<input type="radio" id="clean2" name="gender" value=" good" />
+										<label for="clean2">好</label>
+									</li>
+									<li>
+										<input type="radio" id="clean3" name="gender" value="common" />
+										<label for="clean3">一般</label>
+									</li>
+									<li>
+										<input type="radio" id="clean4" name="gender" value="bad" />
+										<label for="clean4">差</label>
+									</li>									
+								</ul>
+							</fieldset>
+						</li>
+						<li>
+							<label>了解途径： </label>
+							<fieldset class="radios">
+								<ul>
+									<li>
+										<input type="checkbox" id="way1" name="way" value="friend" />
+										<label for="way1">朋友介绍</label>
+									</li>
+									<li>
+										<input type="checkbox" id="way2" name="way" value=" advert" />
+										<label for="way2">广告单</label>
+									</li>
+									<li>
+										<input type="checkbox" id="way3" name="way" value="tv" />
+										<label for="way3">电视宣传</label>
+									</li>
+									<li>
+										<input type="checkbox" id="way4" name="way" value="other" />
+										<label for="way4">其他</label>
+									</li>									
+								</ul>
+							</fieldset>
+						</li>
+						<li>
+							<label for="view">建议或意见： </label>
+							<textarea id="view" name="view" rows="4" cols="90" class="large"> </textarea>
+						</li>
+						
+					</ul>
+				</fieldset>
+				<!   —客户体验结束    -->
+
+				<!   —邮件信息开始    -->
+				<fieldset>
+					<ul class="checkboxes">
+						<li>
+							<input type="checkbox" id="email_ok_msg_from_users" name="email_signup" value="user_emails" />
+							<label for="email_ok_msg_from_users">愿意接收来自其他用户的信息        </label>
+						</li>
+						<li>
+							<input type="checkbox" id="email_ok_occasional_updates" name="email_signup" value="occasional_updates" />
+							<label for="email_ok_occasional_updates">愿意接收我们其他产品的优惠信息</label>
+						</li>
+					</ul>
+				</fieldset>
+				<!   —邮件信息结束    -->
+				
+				<fieldset class="feedalign">
+					<input type="submit" class="feedback" value="确定提交 " />
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>

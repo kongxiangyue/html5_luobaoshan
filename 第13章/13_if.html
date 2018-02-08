@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>条件分支</title>
+	</head>
+	<body>
+		<p>如果时间早于 21:00，会获得问候"Good day!"否则，将获得问候"Good night！"。</p>
+		<button onclick="myFunction()">点击这里</button>
+		<p id="demo"></p>
+		<script type="text/javascript">
+			function myFunction() {
+				var x = "";
+				var time = new Date().getHours();
+				if(time < 21) {
+					x = "Good day！";
+				}else{
+					x = "Good night！";
+				}
+				document.getElementById("demo").innerHTML = x;
+			}
+		</script>
+	</body>
+</html>

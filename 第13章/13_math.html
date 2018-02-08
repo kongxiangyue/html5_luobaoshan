@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>随机产生整数，并计算其平方、平方根和自然对数</title>
+<script>
+  var data;  //声明全局变量，保存随机产生的整数 
+  function getRandom(){
+	  data=Math.floor(Math.random()*101);  //0~100产生随机数	  
+  }  
+  /*随机整数的平方、平方根和自然对象*/
+  function cal(){
+	  var square=Math.pow(data,2);    //计算随机整数的平方
+	  var squareRoot=Math.sqrt(data).toFixed(2); //计算随机整数的平方根
+	  var logarithm=Math.log(data).toFixed(2);   //计算随机整数的自然对数
+	  alert("平方:"+square+"\n平方根:"+squareRoot+"\n自然对数:"+logarithm);
+	  //输出计算结果
+  }
+  function change(){
+  	getRandom();
+  	document.getElementById("rs").innerHTML="随机数为："+ data;
+  }  
+</script>
+</head>
+<body>  
+ <form action="" method="post" name="myform" id="myform">
+    <input type="button" value="随机数" onClick="change()">
+    <input type="button" value="计 算" onClick="cal()">
+    
+ </form>
+ <p id="rs">这里显示 随机数！</p>
+</body>
+</html>

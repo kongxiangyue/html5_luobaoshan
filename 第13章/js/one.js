@@ -1,0 +1,1 @@
+document.write("欢迎来到Js世界！！");

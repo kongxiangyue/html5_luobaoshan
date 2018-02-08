@@ -1,0 +1,33 @@
+table {
+	width: 650px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	text-align: center;
+	background-color: #000000;
+	font-size: 9pt;
+}
+td {
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+caption{
+	font-size: 36px;
+	font-family: "黑体", "宋体";
+	padding-bottom: 15px;
+}
+tr{
+	font-size: 13px;
+	background-color: #cad9ea;
+	color: #000000;
+}
+th{
+	padding: 5px;
+}
+.hui td {
+	background-color: #f5fafe;
+}
+tr:hover td {
+	background-color: #FF9900;
+}
