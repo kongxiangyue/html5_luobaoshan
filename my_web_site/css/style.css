@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+<style type="text/css">
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper {
+	width: 860px;
+	margin: 0 auto;
+	border: 1px solid #CCC;
+}
+header {
+	height: 204px;
+	width: 860px;
+}
+header img {
+	margin: 5px;
+	clear: none;
+	float: left;
+	height: 165px;
+	width: 180px;
+}
+header h1 {
+	margin-top: 50px;
+	margin-left: 100px;
+	float: left;
+}
+.mainnav {
+	background-color: #5DAB57;
+	clear: both;
+}
+.mainnav ul {
+	font-size: 12.5px;
+	font-weight: bold;
+	margin-left: 30px;
+	padding: 6px 0;
+}
+.mainnav li {
+	display: inline; 
+	padding: 0 20px;
+	border-right: 1px solid #88180f;
+}
+.mainnav a {
+	color:#FFF;
+	text-decoration: none;
+}
+.content {
+	clear: none;
+	float: left;
+	width: 650px;
+	padding-right: 20px;
+	border: 1px solid #CCC;
+}
+.content h1 {
+	font-size: 14.7px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+}
+.content h2 {
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-indent: 2em;
+}
+.content p {
+	line-height: 1.5em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	text-indent: 2em;
+	margin-left: 10px;
+}
+.rightside {
+	clear: none;
+	float: right;
+	width: 180px;
+	margin-top: 20px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+	padding-bottom: 20px;
+}
+.rightside ul {
+	padding-left: 30px;
+}
+.rightside li {
+	padding-top: 6px;
+	padding-bottom: 5px;
+	font-size: 12.5px;
+}
+.rightside h3{
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+.rightside a:link, .rightside a:visited {
+	color: #000;
+	text-decoration: none;
+}
+footer {
+	font-size: 12.5px;
+	text-align: center;
+	clear: both;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #4682B4;
+	color: #FFF;
+	font-weight: bold;
+}
+</style>
+
