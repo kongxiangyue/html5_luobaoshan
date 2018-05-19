@@ -5,10 +5,19 @@
 <script src="jquery/jquery-3.3.1.min.js">
 </script>
 <script>
-
-</style>
+$(document).ready(function(){
+  $("button").click(function(){
+    alert("背景颜色 = " + $("p").css("background-color"));
+  });
+});
+</script>
 </head>
-<body>
 
+<body>
+<h2>这是一个标题</h2>
+<p style="background-color:#ff0000">这是一个段落。</p>
+<p style="background-color:#00ff00">这是一个段落。</p>
+<p style="background-color:#0000ff">这是一个段落。</p>
+<button>返回第一个 p 元素的 background-color </button>
 </body>
 </html>
