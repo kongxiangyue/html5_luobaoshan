@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title> 
+<meta charset="utf-8">
 <script src="jquery/jquery-3.3.1.min.js">
 </script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $("#test").hide();
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+  });
+  
+  
+    $("#btn3").click(function(){
+    alert("值为: " + $("#test2").val());
   });
 });
 </script>
 </head>
 
 <body>
-<h2>这是一个标题</h2>
-<p>这是一个段落</p>
-<p id="test">这是另外一个段落</p>
-<button>点我</button>
+<p id="test">这是段落中的 <b>粗体</b> 文本。</p>
+<button id="btn1">显示文本</button>
+<button id="btn2">显示 HTML</button>
+<p>名称: <input type="text" id="test2" value="菜鸟教程"></p>
+<button id="btn3">显示值</button>
 </body>
-
 </html>

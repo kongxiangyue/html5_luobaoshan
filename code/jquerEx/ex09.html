@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title> 
+<meta charset="utf-8">
 <script src="jquery/jquery-3.3.1.min.js">
 </script>
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#test").hide();
+    $("#div1").fadeIn();
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn(3000);
   });
 });
 </script>
 </head>
 
 <body>
-<h2>这是一个标题</h2>
-<p>这是一个段落</p>
-<p id="test">这是另外一个段落</p>
-<button>点我</button>
-</body>
+<p>以下实例演示了 fadeIn() 使用了不同参数的效果。</p>
+<button>点击淡入 div 元素。</button>
+<br><br>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
 
+</body>
 </html>
