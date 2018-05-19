@@ -7,18 +7,19 @@
 </script>
 <script>
 $(document).ready(function(){
-  $("button").click(function(){
-    $("#test").hide();
+  $("input").focus(function(){
+    $(this).css("background-color","yellow");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","white");
   });
 });
 </script>
 </head>
-
 <body>
-<h2>这是一个标题</h2>
-<p>这是一个段落</p>
-<p id="test">这是另外一个段落</p>
-<button>点我</button>
-</body>
 
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
+</body>
 </html>
