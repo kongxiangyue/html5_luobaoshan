@@ -6,17 +6,26 @@
 </script>
 <script>
 $(document).ready(function(){
+  var i = 0;
   $("#my-button").click(function(){
-    $("#my-p").css('color', 'red');
+    var img_array = new Array("img/liu.jpg"
+    , "img/zhang.jpg"
+    , "img/li.jpg"
+    , "img/guo.jpg"
+    );
+    i += 1;
+    //alert(img_array[i]);
+    $("#my_img").attr("src", img_array[i%img_array.length]);
+  
   });
   
 });
 </script>
 </head>
 <body>
+<img id="my_img" src="img/liu.jpg"></img>
+<p><button id="my-button">换一张</button></p>
 
-<p id="my-p">文字没有变色</p>
-<button id="my-button">让文字变成红色</button>
 
 
 </body>
