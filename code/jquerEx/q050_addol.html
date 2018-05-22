@@ -7,16 +7,20 @@
 <script>
 $(document).ready(function(){
   $("#my-button").click(function(){
-    $("#my-p").css('color', 'red');
-  });
   
+    //alert($("#my-text").val());
+    var my_li = $("<li></li>").text($("#my-text").val());
+    $("#my-ol").append(my_li);
+  });
 });
 </script>
 </head>
 <body>
+<input id="my-text" type="text" ></input>
+<button id="my-button">加入</button>
+<ol id="my-ol">
+</ol>
 
-<p id="my-p">文字没有变色</p>
-<button id="my-button">让文字变成红色</button>
 
 
 </body>
