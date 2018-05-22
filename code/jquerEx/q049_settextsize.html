@@ -7,16 +7,16 @@
 <script>
 $(document).ready(function(){
   $("#my-button").click(function(){
-    $("#my-p").css('color', 'red');
+    $("#my-p").css('font-size', $("#text-size").val()+'px');
   });
-  
 });
 </script>
 </head>
 <body>
+<input id="text-size" type="number" ></input>
+<button id="my-button">设置文字大小</button>
+<p id="my-p">文字字体</p>
 
-<p id="my-p">文字没有变色</p>
-<button id="my-button">让文字变成红色</button>
 
 
 </body>
