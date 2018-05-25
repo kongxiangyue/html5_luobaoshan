@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="jquery/jquery-3.3.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  var i = 0;
+  $("#my_button").click(function(){
+    var my_sn   = $("<td><\td>").text($("#my_sn").val());
+    var my_name = $("<td><\td>").text($("#my_name").val());
+  
+  
+    var my_tr = $("<tr><\tr>")
+      .append(my_sn)
+      .append(my_name);
+
+    $("#my_table").append(my_tr);
+  
+    $("tr:even").css("background-color", "gray");
+  
+  });
+});
+</script>
+</head>
+<body>
+
+
+<table border="1" >
+<tr>
+<th>学号</th>
+<th>姓名</th>
+</tr>
+<tr>
+<td><input id="my_sn" type="text"></input></td>
+<td><input id="my_name" type="text"></input></td>
+</tr>
+<tr>
+<td><input id="my_button" type="button" value="加入"></input></td>
+<td></td>
+</tr>
+
+</table> 
+
+
+<table id="my_table" border="1" >
+<tr>
+<th>学号</th>
+<th>姓名</th>
+</tr>
+<tr>
+<td>001</td>
+<td>张三</td>
+</tr>
+</table> 
+
+</body>
+</html>
